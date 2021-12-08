@@ -5,5 +5,148 @@
     box-sizing: border-box;
 }
 
-/* regole header */
+.debug {
+    border:2px solid black;
+}
 
+/*  regole header */
+
+header {
+    width:100wv;
+    background-color: cornflowerblue;
+}
+
+.nav-bar {
+    height:50px;
+    width:100wv;
+    background-color: brown;
+}
+
+.nav-bar:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.nav-item {
+    height:100%;
+    width:10%;
+    border:3px solid green;
+}
+.left {
+    float:left;
+}
+.right {
+    float:right;
+}
+
+/* JUMBO */
+
+#jumbo {
+    height:300px;
+    background-color: blue;
+    width:80%;
+    margin:auto;
+    border:1px solid black;
+}
+
+/* PIANI */
+
+#plans {
+    width:75vw;
+    margin:auto;
+    text-align: center;
+    margin-bottom:100px;/* spaziatura da cancellare  */
+}
+
+.col {
+    height:200px;
+    background-color: pink;
+    width:30%;
+    float:left;
+}
+
+.central-col {
+    width:30%;
+    margin:0 5%;
+    float:left;
+}
+
+.row {
+    width:75vw;
+    height:150px;
+    background-color: red;
+    margin:auto;
+}
+
+/* PARTNER SECTION */
+
+#partner div {
+    display: inline-block;
+}
+
+#img-container {
+    width:40%;
+    height:100%;
+    float:left;
+}
+
+.partner-text {
+    width:40%;
+    height:100%;
+    float:right;
+}
+
+/* OPERATION SECTION */
+
+#operations {
+    margin-top:100px;
+    width:75vw;
+    margin:auto;
+    background-color: crimson;
+}
+
+.operations-container {
+    width:100%;
+    height: 400px;
+    background-color: blue;
+}
+
+.operations-.operations-container {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* PARTNERSHIP */
+
+#customer-full-container {
+background-color: darkgoldenrod;
+}
+
+.center-text{
+    margin:auto;
+    width:75vw;
+}
+
+.col-side {
+    width:30vw;
+    color:blue;
+    float:left;
+}
+
+.col-center {
+    width:calc(100% - 60vw);
+    color:darksalmon;
+    float:left;
+    height: 30vw;
+}
+
+.col-side .item {
+    width:15vw;
+    height:15vw;
+    float:left;
+    background-color: darkslateblue;
+    border:2px solid red;
+
+}
