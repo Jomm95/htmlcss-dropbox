@@ -148,5 +148,46 @@ background-color: darkgoldenrod;
     float:left;
     background-color: darkslateblue;
     border:2px solid red;
+}
+
+.customer-container::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* FREE TRIAL SECTION */
+
+#free-trial {
+    height:200px;
+}
+
+
+/* FAQ SECTION */
+
+footer {
+    background-color: black;
+}
+
+
+.col-container{
+    width:90vw;
+    height:300px;
+    margin:auto;
+    
 
 }
+
+footer .col {
+    width:15vw;
+    margin: 30px 20px;
+    
+}
+
+.low-footer {
+    margin:auto;
+    color:white;
+    background-color: grey;
+    width:90vw;
+}
+
