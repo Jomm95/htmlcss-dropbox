@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Dropbox</title>
 </head>
 <body>
@@ -13,18 +17,18 @@
         <nav class="nav-bar">
 
             <!-- Elementi di sinistra -->
-            <div class="nav-item left"></div>
-            <div class="nav-item left"></div>
-            <div class="nav-item left"></div>
-            <div class="nav-item left"></div>
+            <a href="#"><div class="nav-item left"><img id="logo" src="img/logo-small.png" alt="logo dropbox"></div></a>
+            <a href="#"><div class="nav-item left">Perchè Dropbox?</div></a>
+            <a href="#"><div class="nav-item left">Funzioni</div></a>
+            <a href="#"><div class="nav-item left">Piani e prezzi</div></a>
 
 
             <!-- elementi di destra -->
 
-            <div class="nav-item right"></div>
-            <div class="nav-item right"></div>
-            <div class="nav-item right"></div>
-            <div class="nav-item right"></div>
+            <a href="#"><div class="nav-item right" id="start-button"><button class="blue-button">Inizia</button></div></a>
+            <a href="#"><div class="nav-item right">Accedi</div></a>
+            <a href="#"><div class="nav-item right">Contatta l'ufficio vendite</div></a>
+            <a href="#"><div class="nav-item right">Supporto</div></a>
     
         </nav>
 
@@ -34,22 +38,141 @@
     <!-- MAIN -->
     <main>
         <!-- JUMBO -->
-        <section>
-            <div id="jumbo" class="debug">
-                <h1>JUMBO</h1>
+        <section class="jumbo-section">
+            <div id="jumbo">
+                <h2>Tutto ciò che ti serve per il lavoro, in un unico posto</h2>
+
+                <img src="img/jumbo.png">
+                
+                <p>Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono
+                   accessibili dallo stesso posto. Dropbox Business è uno spazio di 
+                   archiviazione sicuro: è un modo intelligente e integrato per
+                   ottimizzare il flusso di lavoro esistente.</p>
+
+                <button class="blue-button">Inizia la tua prova gratuita</button>
+                    <br>
+                <span>Annulla in qualsiasi momento</span>
             </div>
+
         </section>
 
         <!-- PIANI -->
 
-        <section id="plans" class="debug">
-            <h1>Trova il piano Dropbox Business che fa per te</h1>
-                
-            <div class="col debug"></div>
-            <div class="col central-col debug"></div>
-            <div class="col debug"></div>
+        <section id="plans">
+            <h2>Trova il piano Dropbox Business che fa per te</h2>
 
-            <div class="row debug"></div>
+            <span class="fattura"><i class="far fa-circle"></i>Fatturazione mensile</span>   <span class="fattura"><i class="far fa-circle"></i>Fatturazione annuale</span>
+            <div>
+                <!-- COLONNA SX -->
+                <div class="col"> 
+
+                    <!-- Testa della colonna -->
+                    <div class="col-head"><i class="fa fa-user"></i> Singolo</div>
+                  
+                    <!-- CORPO DELLA COLONNA -->
+                    <div class="col-body">
+                        <h4>Professional</h4>
+                        <span class="price">19,99 €</span>
+                            <br>
+                        <span class="light-text">/mese</span>
+                        
+                        <p><i class="fa fa-user"></i> 1 utente</p>
+                        <p><i class="fa fa-folder-o"></i> 3 TB di spazio di archiviazione sicuro</p>
+                        <p><i class="fa fa-pencil"></i> Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        
+                        <button class="blue-button">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                    </div>
+
+                    <hr>
+
+                    <!-- FOOTER DELLA COLONNA -->
+                    <div class="col-footer">
+                        <h5>Punti salienti del piano</h5>
+                            <ul>
+                                <li><i class="fa fa-check">   </i> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                <li><i class="fa fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                                <li><i class="fa fa-check"></i> Pulizia remota dell'account</li>
+                                <li><i class="fa fa-check"></i> Filigrana documento</li>
+                                <li><i class="fa fa-check"></i> Assistenza prioritaria via email e chat</li>
+                            </ul>
+                    </div>
+                </div>
+
+                <!--COLONNA CENTRALE-->
+                <div class="col central-col debug">
+                    <!-- Testa della colonna -->
+                    <div class="col-head"><i class='fa fa-building'></i> Team</div>
+                  
+                    <!-- CORPO DELLA COLONNA -->
+                    <div class="col-body">
+                        <h4>Standard</h4>
+                        <span class="price">19,99 €</span>
+                            <br>
+                        <span class="light-text">/mese</span>
+                        
+                        <p><i class="fa fa-user"></i> 1 utente</p>
+                        <p><i class="fa fa-folder-o"></i> 3 TB di spazio di archiviazione sicuro</p>
+                        <p><i class="fa fa-smile-o"></i> Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        
+                        <button class="blue-button">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                    </div>
+
+                    <hr>
+
+                    <!-- FOOTER DELLA COLONNA -->
+                    <div class="col-footer">
+                        <h5>Punti salienti del piano</h5>
+                            <ul>
+                                <li><i class="fa fa-check">   </i> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                <li><i class="fa fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                                <li><i class="fa fa-check"></i> Pulizia remota dell'account</li>
+                                <li><i class="fa fa-check"></i> Filigrana documento</li>
+                                <li><i class="fa fa-check"></i> Assistenza prioritaria via email e chat</li>
+                                <li><i class="fa fa-check"></i> Assistenza prioritaria via email e chat</li>
+                            </ul>
+                    </div>
+                </div>
+                </div>
+
+                <!-- COLONNA DX -->
+                <div class="col">
+                    <!-- Testa della colonna -->
+                    <div class="col-head"><i class='fa fa-building'></i> Team</div>
+                  
+                    <!-- CORPO DELLA COLONNA -->
+                    <div class="col-body">
+                        <h4>Advanced</h4>
+                        <span class="price">19,99 €</span>
+                            <br>
+                        <span class="light-text">/mese</span>
+                        
+                        <p><i class="fa fa-user"></i> 1 utente</p>
+                        <p><i class="fa fa-smile-o"></i> 3 TB di spazio di archiviazione sicuro</p>
+                        <p><i class="fa fa-pencil"></i> Funzioni di produttività premium e condivisione file semplice e sicura</p>
+                        
+                        <button class="blue-button">Prova gratis per 30 giorni</button>
+                        <p>oppure <a href="#">acquista ora</a></p>
+                    </div>
+
+                    <hr>
+
+                    <!-- FOOTER DELLA COLONNA -->
+                    <div class="col-footer">
+                        <h5>Punti salienti del piano</h5>
+                            <ul>
+                                <li><i class="fa fa-check">   </i> Invia file fino a 100 GB con Dropbox Transfert</li>
+                                <li><i class="fa fa-check"></i> Cartelle offline su dispositivi mobili</li>
+                                <li><i class="fa fa-check"></i> Pulizia remota dell'account</li>
+                                <li><i class="fa fa-check"></i> Filigrana documento</li>
+                                <li><i class="fa fa-check"></i> Assistenza prioritaria via email e chat</li>
+                                <li><i class="fa fa-check"></i> Assistenza prioritaria via email e chat</li>
+                            </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
 
             
         </section>
