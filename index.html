@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/f69f7da07d.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <title>Dropbox</title>
 </head>
@@ -62,7 +63,7 @@
             <h2>Trova il piano Dropbox Business che fa per te</h2>
 
             <span class="fattura"><i class="far fa-circle"></i>Fatturazione mensile</span>   <span class="fattura"><i class="far fa-circle"></i>Fatturazione annuale</span>
-            <div>
+            <div class="col-container">  <!-- CONTENITORE COLONNE -->
                 <!-- COLONNA SX -->
                 <div class="col"> 
 
@@ -134,7 +135,6 @@
                             </ul>
                     </div>
                 </div>
-                </div>
 
                 <!-- COLONNA DX -->
                 <div class="col">
@@ -171,20 +171,36 @@
                             </ul>
                     </div>
                 </div>
-                </div>
             </div>
 
-            
+            <!-- Ultima colonna orizzontale -->
+            <div id="plans-footer">
+                <div class="col-head"><i class='fa fa-building'></i> Team</div>
+                
+                <div class="left">
+                    <h4>Enterprise</h4>
+                    <h5>Contatta l'ufficio vendite per i prezzi</h5>
+                    <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala</p>
+                </div>
+                
+                    <a href="#"><button class="blue-button">Contatta l'ufficio vendite</button></a>
+
+            </div>
+
         </section>
 
         <!-- DROPBOX PARTNER -->
-        <section id="partner" class="row debug">
+        <section id="partner">
 
-            <div id="img-container" class="debug">
-                <img><!-- IMMAGINE FLOAT LEFT  -->
+            <div id="img-container"> <!-- IMG FLOAT SINISTRA  -->
+                <img src="img/partner.png" alt="partnership with dropbox"><!-- IMMAGINE FLOAT LEFT  -->
             </div>
 
-            <div class="partner-text debug"></div> <!-- TESTO FLOAT DESTRA  -->
+            <div class="partner-text"> <!-- TESTO FLOAT DESTRA  -->
+                <h4>Entra in contatto con un partner Dropbox</h4>
+                <p>Trova un partner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi necessari per raggiungere i tuoi obiettivi aziendali, tra cui implementazione, integrazione, gestione e supporto continui</p>
+                <a><button class="white-button">Trova un partner</button></a>
+            </div> 
 
         </section>
 
@@ -253,7 +269,7 @@
         </section>
 
     </main>
-
+    <!-- FOOTER -->
     <footer>
         <div class="col-container debug">
 

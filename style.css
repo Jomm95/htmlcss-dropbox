@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
+button:hover {
+    cursor:pointer;
+}
 
 .debug {
     border:2px solid black;
@@ -12,6 +15,11 @@
 
 main {
     margin-top: 60px;;
+}
+
+h4 {
+    font-size: 23px;
+    margin-bottom:20px;
 }
 
 /*  regole header */
@@ -23,13 +31,13 @@ header {
     font-size: 14px;
     font-weight: 500;
     background-color: white;
+    z-index: 1;
     
 }
 
 .nav-bar {
     height:60px;
     line-height: 55px;
-    width:100wv;
 }
 
 .nav-bar::after {
@@ -120,13 +128,8 @@ header {
 
 #plans {
     width:65vw;
-    height:800px;
-    margin:150px auto;
-}
-
-#plans h2 {
-    font-size: 35px;
-    margin-bottom:20px;
+    height:1070px;
+    margin:150px auto 300px auto;
 }
 
 .col {
@@ -137,6 +140,7 @@ header {
     border:1px solid lightgray;
 }
 
+
 /* REGOLE COL HEAD */
 
 #plans .col {
@@ -145,6 +149,11 @@ header {
     margin-top:30px;
     float:left;
     border:1px solid lightgray;
+}
+
+#plans .col-container {
+    height:95%;
+    width:100%;
 }
 
 .col-head {
@@ -202,9 +211,7 @@ hr {
 
 
 /* COL-FOOTER */
-.col-footer h5 {
-    font-size: 15px;
-}
+
 .col-footer li {
     font-size: 13px;
     list-style: none;
@@ -216,7 +223,7 @@ hr {
 }
 
 
-
+/* Colonna centrale */
 .central-col {
     width:30%;
     margin:30px 5%;
@@ -224,34 +231,91 @@ hr {
 }
 
 .row {
-    height:150px;
+    height:200px;
     background-color: red;
     margin:auto;
 }
 
+
+/* Sezione plans footer(ultima colonna orizzontale */
+
+#plans-footer {
+    height:200px;
+    width:100%;
+    border:1px solid lightgray;
+    position:relative;
+}
+
+#plans h5 {
+    font-size: 15px;
+}
+
+#plans-footer p{
+    margin-top:20px;
+    font-size: 13px;
+
+}
+
+#plans-footer .left {
+    margin:20px 0 15px 25px;
+}
+
+#plans-footer button {
+    position:absolute;
+    right:30px;
+    top:60px;
+}
+
 /* PARTNER SECTION */
+#partner {
+    width:65vw;
+    height:auto;
+    margin:0 auto 300px auto;
+}
 
 #partner div {
     display: inline-block;
 }
 
 #img-container {
-    width:40%;
-    height:100%;
+    width:48%;
     float:left;
 }
 
-.partner-text {
-    width:40%;
+#img-container img {
     height:100%;
+    width:100%;
+}
+
+.partner-text {
+    padding-top:25px;
+    width:48%;
     float:right;
+}
+
+.partner-text p {
+    font-size: 13px;
+    margin-bottom:20px;
+}
+
+.partner-text button {
+    padding:5px 10px;
+    border:1px solid black;
+    background-color: white;
+    font-weight: 500;
+}
+
+#partner::after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 /* OPERATION SECTION */
 
 #operations {
     margin-top:100px;
-    width:75vw;
+    width:65vw;
     margin:auto;
     background-color: crimson;
 }
@@ -320,7 +384,7 @@ footer {
 }
 
 
-.col-container{
+footer .col-container{
     width:90vw;
     height:300px;
     margin:auto;
